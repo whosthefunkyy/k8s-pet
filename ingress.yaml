@@ -3,6 +3,9 @@ kind: Ingress
 metadata:
   name: go-api-ingress
   namespace: dev
+  labels:
+    app: go-api
+    project: my-k8s-infra
 spec:
   rules:
   - host: go-api.local        

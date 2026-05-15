@@ -4,6 +4,9 @@ kind: Deployment
 metadata:
   name: go-api
   namespace: dev
+  labels:
+    app: go-api
+    project: my-k8s-infra
 
 spec:
   replicas: 2

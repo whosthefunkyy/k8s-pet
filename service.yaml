@@ -3,6 +3,9 @@ kind: Service
 metadata:
   name: srv-api
   namespace: dev
+  labels:
+    app: go-api
+    project: my-k8s-infra
 spec:
   selector:
     app: go-api

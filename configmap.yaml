@@ -3,6 +3,9 @@ kind: ConfigMap
 metadata:
   name: go-api-config
   namespace: dev
+  labels:
+    app: go-api
+    project: my-k8s-infra
 
 data:
   APP_ENV: "production"
